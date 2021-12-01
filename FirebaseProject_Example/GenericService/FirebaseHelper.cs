@@ -10,8 +10,8 @@ namespace FirebaseProject_Example.GenericService
 {
     public class FirebaseHelper<T>:IFirebaseHelper<T>
     {
-        readonly string BASE_URL = "https://striking-yen-316900-default-rtdb.firebaseio.com/";
-        readonly string AUTH = "VBu1CdQfZiOMz17UyeF6amdo5DEAYxJuyrh45fi8";
+        readonly string BASE_URL = "https://*********.firebaseio.com/";
+        readonly string AUTH = "VBu1CdQfFiOMz17UyeF65m7o54EAYxJu2rS43fi8"; // AUTH KEY (FİREBASE) !
         readonly string ROOT_KEY = typeof(T).Name;
 
         private FirebaseClient GetFirebaseClient()
