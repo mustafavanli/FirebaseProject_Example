@@ -41,10 +41,10 @@ namespace FirebaseProject_Example.GenericService
             try
             {
                 FirebaseClient client = GetFirebaseClient();
-                var users = await client.Child(ROOT_KEY)
+                var datas = await client.Child(ROOT_KEY)
                                         .OnceAsync<T>();
 
-                return users.Select(u => u.Object);
+                return datas.Select(u => u.Object);
             }
             catch (System.Exception)
             {
